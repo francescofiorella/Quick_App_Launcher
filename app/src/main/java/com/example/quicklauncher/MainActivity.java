@@ -39,15 +39,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // creo una stringa con l'url
                 String google = "http://www.google.com";
-                // Universal Risource Identifier
+                // Universal Resource Identifier
                 Uri webaddress = Uri.parse(google);
 
                 // l'intent va fuori dall'app
                 Intent gotoGoogle = new Intent(Intent.ACTION_VIEW, webaddress);
                 // controlla se c'è un browser (se c'è una lista di cose che possono risolvere l'activity)
-                if (gotoGoogle.resolveActivity(getPackageManager()) != null){
-                    startActivity(gotoGoogle);
-                }
+                /*if (gotoGoogle.resolveActivity(getPackageManager()) != null) {
+
+                }*/
+                // Il check non funziona (ritorna null) quindi per ora lancia l'activity senza check
+                startActivity(gotoGoogle);
+
             }
         });
     }
