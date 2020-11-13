@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // definizione button
-        Button secondActivityBtn = (Button)findViewById(R.id.secondActivityBtn);
+        Button secondActivityBtn = (Button) findViewById(R.id.secondActivityBtn);
         // onClick
         secondActivityBtn.setOnClickListener(new View.OnClickListener() {
 
