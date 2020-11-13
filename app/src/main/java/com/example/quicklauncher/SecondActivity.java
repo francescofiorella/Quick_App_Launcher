@@ -14,7 +14,7 @@ public class SecondActivity extends AppCompatActivity {
 
         // imposta il testo passato da MainActivity
         if (getIntent().hasExtra("org.example.quicklauncher.SOMETHING")){
-            TextView tv = (TextView) findViewById(R.id.textView);
+            TextView tv = (TextView)findViewById(R.id.textView);
             String text = getIntent().getExtras().getString("org.example.quicklauncher.SOMETHING");
             tv.setText(text);
         }
